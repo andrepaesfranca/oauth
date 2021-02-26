@@ -76,6 +76,8 @@ namespace oauth_api
 
             app.UseRouting();
 
+            app.UseAuthentication();
+
             app.UseAuthorization();
 
             UpgradeDatabase(app);
